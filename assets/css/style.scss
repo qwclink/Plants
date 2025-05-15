@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+$green: #156963;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 142px;
+  &__contant {
+    max-width: 519px;
+  }
+  &__head {
+    font-weight: 500;
+    font-size: 68px;
+    color: $green;
+    margin-bottom: 24px;
+  }
+  &__description {
+    font-size: 18px;
+    line-height: 178%;
+    color: #2c1500;
+    opacity: 0.8;
+    margin-bottom: 110px;
+  }
+  &__links {
+    display: flex;
+    justify-content: end;
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 160px;
+    justify-content: center;
+    padding: 38px 49px;
+  }
+  &__link-head {
+    font-weight: 500;
+    font-size: 32px;
+    color: $green;
+  }
+  &__link-active {
+    background: $green;
+    color: #fff;
+    .hero__link-head {
+      color: #fff;
+    }
+  }
+  &__arrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.5;
+    margin-bottom: 12px;
+  }
+}
+.button {
+  padding: 8px 32px;
+  background: $green;
+  color: #ffff;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+}
+.a-active {
+  color: $green;
+}
+.header {
+  padding: 40px 6px;
+  margin: 0 56px 78px;
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px;
+
+  &__card {
+    max-width: 268px;
+    padding: 22px 16px;
+    border: 1px solid #e0e0e0;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: $green;
+    margin-bottom: 16px;
+  }
+  &__description {
+    font-size: 10px;
+    line-height: 160%;
+    color: #2c1500;
+  }
+}
+
+.featured {
+  margin-bottom: 60px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__head {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &__hr {
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 16px 0 24px;
+  }
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__card {
+    text-align: center;
+    img {
+      margin-bottom: 16px;
+    }
+  }
+  &__idr {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
